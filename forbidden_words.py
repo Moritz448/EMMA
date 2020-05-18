@@ -1,1 +1,1 @@
-["Arschloch", "Blödmann", "Stinkstiefel", "Arsch", "Knallerbse", "du Schwein"]
+["arschloch", "blödmann", "stinkstiefel", "arsch", "knallerbse", "du schwein", "du stinkst"]
