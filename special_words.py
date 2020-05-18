@@ -1,4 +1,7 @@
-family = [
+# Words to react on it
+
+
+family = [ 
 
     # a few different words for "mother" in German
     "mutter",
@@ -57,4 +60,5 @@ family = [
     
     "vierling",
     "vierlinge",
-] 
+]
+
