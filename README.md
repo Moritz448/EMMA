@@ -1,5 +1,5 @@
 # EMMA
-The MINT - Stipendium Talente Badenwürtemmberg 2020 chatbot by Moritz Honauer
+The MINT - Stipendium Talente Baden-Württemberg 2020 chatbot by Moritz Honauer
 
 
 # Why I do this
