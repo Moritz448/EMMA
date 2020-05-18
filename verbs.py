@@ -8,4 +8,10 @@ verbs = [
     ("rede", "redest")
     ("laufen", "läufst"),
     ("programmiere", "programmierst")
+    ("nehme teil", "nimmst teil")
+    ("zocke", "zockst"),
+    ("lese", "liest"),
+    ("kuschle", "kuschelst")
+    ("musiziere", "musizierst"),
+    ("löse", "löst")
     ]
