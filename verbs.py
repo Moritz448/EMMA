@@ -1,17 +1,17 @@
 verbs = [
     ("mag", "magst"),
     ("spreche", "sprichst"),
-    ("liebe", "liebst")
+    ("liebe", "liebst"),
     ("spiele", "spielst"),
     ("habe", "hast"),
     ("gehe", "gehst"),
-    ("rede", "redest")
+    ("rede", "redest"),
     ("laufen", "läufst"),
-    ("programmiere", "programmierst")
-    ("nehme teil", "nimmst teil")
+    ("programmiere", "programmierst"),
+    ("nehme teil", "nimmst teil"),
     ("zocke", "zockst"),
     ("lese", "liest"),
-    ("kuschle", "kuschelst")
+    ("kuschle", "kuschelst"),
     ("musiziere", "musizierst"),
     ("löse", "löst")
     ]
