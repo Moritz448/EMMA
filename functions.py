@@ -31,9 +31,9 @@ def read_input():
 def reformulate_sentence(sentence):
 
     for i_form, you_form in verbs.i_you_forms:
-        beginning = "Ich" + i_form + " "
+        beginning = "ich" + i_form + " "
 
-        if sentence.startswith(beginning):
+        if sentence.startswith(str(beginning)):
             question = "Warum " + you_form + "Du " + sentence[len(beginning):] + "?"
             print(question)
             return True
