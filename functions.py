@@ -1,0 +1,1 @@
+# Functon definitions for EMMA
