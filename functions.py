@@ -1,38 +1,38 @@
 from verbs import *
 from special_words import *
 
-def satz_umformulieren(satz):
+def form_sentence(sentence):
     
 
-    for ich_form, du_form in verben:
-        anfang = "Ich " + ich_form + " "
-        if satz.startswith(anfang):
+    for i_form, du_form in verbs:
+        beginning = "ich " + i_form + " "
+        if sentence.startswith(beginning):
             frage = "Warum " + du_form + " Du " + \
-                satz[len(anfang):] + "?"
+                sentence[len(beginning):] + "?"
             print(frage)
             return True
     return False
 
 
-def nach_familie_fragen(satz):
+def nach_familie_fragen(sentence):
 
 
-    woerter = satz.split()
-    for familienmitglied in familienmitglieder:
-        if familienmitglied in woerter:
+    words = sentence.split()
+    for family_member in family:
+        if family_member in words:
             print("Erzähl mir mehr über deine Familie.")
             return True
     return False
 
 
-def lese_satz():
-    # Text einlesen
+def read_sentence():
+    # Text einreadn
     eingabe = input()
 
-    # Leerzeichen am Anfang und Ende entfernen
+    # Leerzeien am beginning und Ende entfernen
     eingabe = eingabe.strip()
 
-    # Mehrere Leerzeichen hintereinander
+    # Mehrere Leerzeien hintereinander
     # durch ein einzelnes ersetzen
     while not eingabe.find("  ") < 0:
         eingabe = eingabe.replace("  ", " ")
