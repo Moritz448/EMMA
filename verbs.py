@@ -1,4 +1,4 @@
-verbs = [
+i_you_forms = [
     ("mag", "magst"),
     ("spreche", "sprichst"),
     ("liebe", "liebst"),

@@ -1,5 +1,9 @@
 # Functon definitions for EMMA
 
+import verbs
+
+# Function for reading and preparing inputs 
+
 def read_input():
 
     # Input text
@@ -18,3 +22,22 @@ def read_input():
 
     # Convert everything to lowercase
     inp = inp.lower()
+
+    return inp
+
+
+# Function for reformulating the handened sentence
+
+def reformulate_sentence(sentence):
+
+    for i_form, you_form in verbs.i_you_forms:
+        beginning = "Ich" + i_form + " "
+
+        if sentence.startswith(beginning):
+            question = "Warum " + you_form + "Du " + sentence[len(beginning):] + "?"
+            print(question)
+            return True
+        
+        return False
+
+
