@@ -1,43 +1,44 @@
-# Functon definitions for EMMA
+from verbs import *
+from special_words import *
 
-import verbs
+def satz_umformulieren(satz):
+    
 
-# Function for reading and preparing inputs 
-
-def read_input():
-
-    # Input text
-    inp = input()
-
-    # Remove spaces at the beginning and the end of the input
-    inp = inp.strip()
-
-    # Combine several spaces in a row into one
-    while not inp.find("  ") < 0:
-        inp = inp.replace("  ", " ")
-
-    # Remove the dot at the end
-    if inp.endswith("."):
-        inp = inp[:-1]
-
-    # Convert everything to lowercase
-    inp = inp.lower()
-
-    return inp
-
-
-# Function for reformulating the handened sentence
-
-def reformulate_sentence(sentence):
-
-    for i_form, you_form in verbs.i_you_forms:
-        beginning = "ich" + i_form + " "
-
-        if sentence.startswith(str(beginning)):
-            question = "Warum " + you_form + "Du " + sentence[len(beginning):] + "?"
-            print(question)
+    for ich_form, du_form in verben:
+        anfang = "Ich " + ich_form + " "
+        if satz.startswith(anfang):
+            frage = "Warum " + du_form + " Du " + \
+                satz[len(anfang):] + "?"
+            print(frage)
             return True
-        
-        return False
+    return False
 
 
+def nach_familie_fragen(satz):
+
+
+    woerter = satz.split()
+    for familienmitglied in familienmitglieder:
+        if familienmitglied in woerter:
+            print("Erzähl mir mehr über deine Familie.")
+            return True
+    return False
+
+
+def lese_satz():
+    # Text einlesen
+    eingabe = input()
+
+    # Leerzeichen am Anfang und Ende entfernen
+    eingabe = eingabe.strip()
+
+    # Mehrere Leerzeichen hintereinander
+    # durch ein einzelnes ersetzen
+    while not eingabe.find("  ") < 0:
+        eingabe = eingabe.replace("  ", " ")
+
+    # Punkt am Ende entfernen
+    if eingabe.endswith("."):
+        eingabe = eingabe[:-1]
+
+    return eingabe
