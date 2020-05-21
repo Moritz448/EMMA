@@ -3,15 +3,15 @@ from functions import *
 import random
 
 
-def lili():
+def emma():
     kommentare = ["Das klingt interessant.", "Aha."]
     nachfragen = ["Erzähl mir mehr davon!",
                   "Woruber willst du noch sprechen?",
                   "Und weiter?"]
 
-    print("Hallo! Mein Name ist LILI. Schön, dass du",
+    print("Hallo! Mein Name ist EMMA. Schön, dass du",
           "mit mir sprechen willst. Wenn du keine Lust",
-          "mehr hast, sag einfach 'Tschüß'.",
+          "mehr hast, sag einfach 'Tschüss'.",
           "Was möchtest du mir heute erzählen?")
     print()
 
@@ -22,7 +22,7 @@ def lili():
 
         answered = False
 
-        if inp == "Tschüß":
+        if inp == "tschüss" or "tschüß":
             print("Schade, dass du schon gehen willst.",
                   "Bis bald!")
             answered = True
