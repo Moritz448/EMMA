@@ -15,26 +15,26 @@ def lili():
           "Was möchtest du mir heute erzählen?")
     print()
 
-    gespraech_zu_ende = False
+    talk_ended = False
 
-    while not gespraech_zu_ende:
-        eingabe = lese_satz()
+    while not talk_ended:
+        inp = read_sentence()
 
-        geantwortet = False
+        answered = False
 
-        if eingabe == "Tschüß":
+        if inp == "Tschüß":
             print("Schade, dass du schon gehen willst.",
                   "Bis bald!")
-            geantwortet = True
-            gespraech_zu_ende = True
+            answered = True
+            talk_ended = True
 
-        if not geantwortet:
-            geantwortet = satz_umformulieren(eingabe)
+        if not answered:
+            answered = reformulate_sentence(inp)
 
-        if not geantwortet:
-            geantwortet = nach_familie_fragen(eingabe)
+        if not answered:
+            answered = ask_after_family(inp)
 
-        if not geantwortet:
+        if not answered:
             print(random.choice(kommentare), 
                   random.choice(nachfragen))
 
