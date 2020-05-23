@@ -15,8 +15,7 @@ def reformulate_sentence(sentence):
 
 
 def ask_after_family(sentence):
-
-
+    
     words = sentence.split()
     for family_member in family:
         if family_member in words:
@@ -26,18 +25,17 @@ def ask_after_family(sentence):
 
 
 def read_sentence():
-    # Text einreadn
+    # Input text
     inp = input()
 
-    # Leerzeien am beginning und Ende entfernen
+    # Delete Whitespaces at the beginning and the end
     inp = inp.strip()
 
-    # Mehrere Leerzeien hintereinander
-    # durch ein einzelnes ersetzen
+    # Merge many Whitespaces to one
     while not inp.find("  ") < 0:
         inp = inp.replace("  ", " ")
 
-    # Punkt am Ende entfernen
+    # Delete the dot at the end
     if inp.endswith("."):
         inp = inp[:-1]
 
