@@ -9,5 +9,7 @@ verbs = [
         ("spreche", "sprichst"),
         ("renne", "rennst"),
         ("bin", "bist"),
-        ("kriege", "kriegst")
+        ("kriege", "kriegst"),
+        ("will", "willst"),
+        ("möchte", "möchtest")
         ]

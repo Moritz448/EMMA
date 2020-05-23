@@ -1,5 +1,5 @@
 from functions import *
-from word_lists import *
+from word_lists import comments, questions
 
 import random
 
@@ -29,6 +29,9 @@ def emma():
 
             if not answered:
                 answered = i_am_sad(inp)
+
+            if not answered:
+                answered = tell_me_poem(inp)
 
             if not answered:
                 answered = is_insulting(inp)
