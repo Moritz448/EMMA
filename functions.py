@@ -1,6 +1,6 @@
-from verbs import *
-from special_words import *
-from word_lists import *
+from verbs import verbs
+from special_words import family
+from word_lists import no_variations, yes_variations
 
 def reformulate_sentence(sentence):
     
