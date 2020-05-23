@@ -6,11 +6,12 @@ import random
 
 def emma():
 
-    print("Hallo! Mein Name ist EMMA. Schön, dass du",
-          "mit mir sprechen willst. Wenn du keine Lust",
-          "mehr hast, sag einfach 'Tschüss'.",
-          "Was möchtest du mir heute erzählen?")
-    print()
+    print("\n##############################################################\nHallo! Mein Name ist EMMA. Schön, dass du",
+          "mit mir\nsprechen willst. Wenn du keine Lust",
+          "mehr hast, sag\neinfach 'Tschüss'.",
+          "Was möchtest du mir heute erzählen?",
+          "\n##############################################################\n")
+
 
     talk_ended = False
 
