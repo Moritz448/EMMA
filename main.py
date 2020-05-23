@@ -25,6 +25,9 @@ def emma():
             talk_ended = True
 
         if not answered:
+            answered = i_am_sad(inp)
+
+        if not answered:
             answered = reformulate_sentence(inp)
 
         if not answered:
