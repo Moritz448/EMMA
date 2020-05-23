@@ -1,6 +1,29 @@
 from verbs import verbs
 from special_words import family
 from word_lists import no_variations, yes_variations
+from forbidden_words import insulting_words
+
+
+def read_sentence():
+
+    # Input text
+    inp = input()
+
+    # Delete Whitespaces at the beginning and the end
+    inp = inp.strip()
+
+    # Merge many Whitespaces to one
+    while not inp.find("  ") < 0:
+        inp = inp.replace("  ", " ")
+
+    # Delete the dot at the end
+    if inp.endswith("."):
+        inp = inp[:-1]
+
+    inp = inp.lower()
+
+    return inp
+
 
 def reformulate_sentence(sentence):
     
@@ -25,26 +48,6 @@ def ask_after_family(sentence):
     return False
 
 
-def read_sentence():
-
-    # Input text
-    inp = input()
-
-    # Delete Whitespaces at the beginning and the end
-    inp = inp.strip()
-
-    # Merge many Whitespaces to one
-    while not inp.find("  ") < 0:
-        inp = inp.replace("  ", " ")
-
-    # Delete the dot at the end
-    if inp.endswith("."):
-        inp = inp[:-1]
-
-    inp = inp.lower()
-
-    return inp
-
 def i_am_sad(sentence):
     words = sentence.split()
     if "traurig" in words:
@@ -62,4 +65,16 @@ def i_am_sad(sentence):
                 print("\nUnd was macht dich traurig?")
 
         return True
+    return False
+
+
+def is_insulting(sentence):
+
+    words = sentence
+    
+    for insulting_word in insulting_words:
+        if insulting_word in words:
+            print("\nHey! Das ist überhaupt nicht nett!")
+            print("\nWas willst du mir noch sagen?")
+            return True
     return False

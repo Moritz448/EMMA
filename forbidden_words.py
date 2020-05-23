@@ -1,4 +1,4 @@
-forbidden_words = [
+insulting_words = [
     "arschloch",
     "blödmann",
     "stinkstiefel",

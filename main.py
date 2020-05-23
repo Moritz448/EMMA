@@ -31,6 +31,9 @@ def emma():
                 answered = i_am_sad(inp)
 
             if not answered:
+                answered = is_insulting(inp)
+
+            if not answered:
                 answered = reformulate_sentence(inp)
 
             if not answered:
