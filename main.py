@@ -41,3 +41,4 @@ def emma():
         print()
 
 
+emma()
