@@ -1,13 +1,10 @@
 from functions import *
+from word_lists import *
 
 import random
 
 
 def emma():
-    kommentare = ["Das klingt interessant.", "Aha."]
-    nachfragen = ["Erzähl mir mehr davon!",
-                  "Woruber willst du noch sprechen?",
-                  "Und weiter?"]
 
     print("Hallo! Mein Name ist EMMA. Schön, dass du",
           "mit mir sprechen willst. Wenn du keine Lust",
@@ -35,8 +32,8 @@ def emma():
             answered = ask_after_family(inp)
 
         if not answered:
-            print(random.choice(kommentare), 
-                  random.choice(nachfragen))
+            print(random.choice(comments), 
+                  random.choice(questions))
 
         print()
 
