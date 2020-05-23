@@ -20,10 +20,9 @@ def emma():
         answered = False
 
         #if inp == "tschüss" or "tschüß":
-        #    print("Schade, dass du schon gehen willst.",
-        #          "Bis bald!")
-        #    answered = True
-        #    talk_ended = True
+        #print("Schade, dass du schon gehen willst. Bis bald!")
+        #answered = True
+        #talk_ended = True
 
         if not answered:
             answered = reformulate_sentence(inp)

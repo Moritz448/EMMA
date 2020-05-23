@@ -44,3 +44,10 @@ def read_sentence():
     inp = inp.lower()
 
     return inp
+
+def i_am_sad(sentence):
+    words = sentence.split()
+    if "traurig" in words:
+        print("Oh, das tut mir aber leid. Möchtest du mir auch sagen, wieso?")
+        return True
+    return False

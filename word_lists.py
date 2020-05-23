@@ -1,7 +1,9 @@
 comments = ["Das klingt interessant.",
             "Aha.",
-            "Interessant."]
+            "Interessant.",
+            "Klingt gut."]
 
 questions = ["Erzähl mir mehr davon!",
-            "Woruber willst du noch sprechen?",
-            "Und weiter?"]
+            "Worüber willst du noch sprechen?",
+            "Und weiter?",
+            "Was möchtest du mir noch sagen?"]

@@ -7,5 +7,7 @@ verbs = [
         ("rede", "redest"),
         ("laufe", "läufst"),
         ("spreche", "sprichst"),
-        ("renne", "rennst")
+        ("renne", "rennst"),
+        ("bin", "bist"),
+        ("kriege", "kriegst")
         ]
