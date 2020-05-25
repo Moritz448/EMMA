@@ -92,10 +92,10 @@ def tell_me_poem(sentence):
         return False
 
 
-##def tell_me_joke(sentence):
-##    for joke_indicator in tell_joke:
-##        if joke_indicator in sentence:
-##            print("\nOkay" + "\n" + random.choice(jokes))
-##            return True
-##        
-##        return False
+def tell_me_joke(sentence):
+    for joke_indicator in tell_joke:
+        if joke_indicator in sentence:
+            print("\nOkay" + "\n" + random.choice(jokes))
+            return True
+        
+        return False

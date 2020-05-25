@@ -33,5 +33,6 @@ yes_variations = ["ja",
                   "jaaaaa",
                   "yes",
                   "gerne",
-                  "yeah"
+                  "yeah",
+                  "joa"
 ]
