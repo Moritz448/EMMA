@@ -1,5 +1,7 @@
 # coding=utf-8
 
+import random
+
 # Contains jokes for telling them
 jokes = [
     "Was sagt ein Haifisch, wenn er einen Surfer sieht?\n'Das ist aber nett serviert, so mit Frühstücksbrettchen.'",
@@ -12,3 +14,26 @@ jokes = [
     "Sitzen zwei Hochhäuser auf dem Dachboden und stricken Benzin.\nWas stimmt nicht?\nBenzin darf man nur Häkeln!",
     "Willst du einen Baustellenwitz hören?\nJa\nOk, ich arbeite daran."
 ]
+
+tell_joke = [
+   "erzähl mir einen witz",
+   "erzähl mir ein witz",
+   "erzähl einen witz",
+   "erzähl ein witz",
+   "erzähl witz",
+   "erzähl mir nen witz",
+   "erzähle mir ein witz",
+   "erzähle mir einen witz",
+   "erzähle einen witz",
+   "erzähle ein witz",
+   "erzähle witz"
+]
+
+
+def tell_me_joke(sentence):
+    for joke_indicator in tell_joke:
+        if joke_indicator in sentence:
+            print("\nOkay" + "\n" + random.choice(jokes))
+            return True
+        
+    return False

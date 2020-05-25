@@ -74,19 +74,6 @@ tell_poem = [
    "ich möchte ein gedicht" 
 ]
 
-tell_joke = [
-   "erzähl mir einen witz",
-   "erzähl mir ein witz",
-   "erzähl einen witz",
-   "erzähl ein witz",
-   "erzähl witz",
-   "erzähl mir nen witz",
-   "erzähle mir ein witz",
-   "erzähle mir einen witz",
-   "erzähle einen witz",
-   "erzähle ein witz",
-   "erzähle witz"
-]
 
 calculate_words  =[
    "mir ist langweilig",
