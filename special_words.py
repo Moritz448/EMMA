@@ -63,14 +63,3 @@ family = [
     "vierling",
     "vierlinge",
 ]
-
-
-
-
-calculate_words  =[
-   "mir ist langweilig",
-   "langweilig",
-   "ich möchte rechnen",
-   "ich möchte rechnen üben",
-   "ich will rechnen"
-]

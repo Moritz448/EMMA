@@ -1,14 +1,14 @@
 # coding=utf-8
 
 from verbs import verbs
-from special_words import family, calculate_words
+from special_words import family
 from word_lists import no_variations, yes_variations
 from forbidden_words import insulting_words
 import random
 from poems import poems
 from jokes import jokes
 import word_lists
-
+from calculate import *
 
 def read_sentence():
 
@@ -82,30 +82,3 @@ def is_insulting(sentence):
             print("\nWas willst du mir noch sagen?")
             return True
     return False
-
-
-def calculate(sentence):
-    for calc_indicator in calculate_words:
-        if calc_indicator in sentence:
-            make_calc_task()
-            return True
-    
-    return False
-
-def make_calc_task():
-
-    print("Okay. Hier kommt die Aufgabe:\n")
-    def check_answer():
-
-        
-        answer = input("\nWas ergibt 5 + 5?\n")
-        
-        if int(answer) == 10:
-            print("Das ist Richtig!!")
-            return True
-
-        else:
-            print("\nDas ist leider falsch!")
-            check_answer()
-    
-    check_answer()
