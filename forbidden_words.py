@@ -5,7 +5,6 @@ insulting_words = [
     "blödmann",
     "stinkstiefel",
     "arsch",
-    "knallerbse",
     "du schwein",
     "du stinkst",
     "blöde kuh",

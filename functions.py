@@ -44,7 +44,6 @@ def reformulate_sentence(sentence):
 
 
 def ask_after_family(sentence):
-
     words = sentence.split()
     for family_member in family:
         if family_member in words:
@@ -76,7 +75,6 @@ def i_am_sad(sentence):
 def is_insulting(sentence):
 
     words = sentence
-    
     for insulting_word in insulting_words:
         if insulting_word in words:
             print("\nHey! Das ist überhaupt nicht nett!")
@@ -88,10 +86,10 @@ def is_insulting(sentence):
 def tell_me_poem(sentence):
     for poem_indicator in tell_poem:
         if poem_indicator in sentence:
-            print("\nOkay" + "\n" + random.choice(poems))
+            print("\nOkay\n" + random.choice(poems))
             return True
         
-        return False
+    return False
 
 
 def tell_me_joke(sentence):
@@ -100,4 +98,4 @@ def tell_me_joke(sentence):
             print("\nOkay" + "\n" + random.choice(jokes))
             return True
         
-        return False
+    return False
