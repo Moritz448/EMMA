@@ -21,6 +21,7 @@ tell_joke = [
    "erzähl einen witz",
    "erzähl ein witz",
    "erzähl witz",
+   "erzähl nen witz",
    "erzähl mir nen witz",
    "erzähle mir ein witz",
    "erzähle mir einen witz",

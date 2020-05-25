@@ -64,15 +64,7 @@ family = [
     "vierlinge",
 ]
 
-tell_poem = [
-   "erzähl mir ein gedicht",
-   "erzähl ein gedicht",
-   "erzähle mir ein gedicht",
-   "erzähle ein gedicht",
-   "ich will ein gedicht",
-   "ich will ein gedicht hören",
-   "ich möchte ein gedicht" 
-]
+
 
 
 calculate_words  =[

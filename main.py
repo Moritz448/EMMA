@@ -3,6 +3,7 @@
 from functions import *
 from word_lists import comments, questions, goodbye
 from jokes import tell_me_joke
+from poems import tell_me_poem
 
 import random
 

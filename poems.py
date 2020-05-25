@@ -1,5 +1,7 @@
 # coding=utf-8
 
+import random
+
 # Contains Poems for telling them
 poems  = [
     ("\nSpinoza\nHier liegt ein Eichbaum umgerissen,\nSein Wipfel tät die Wolken küssen,\nEr liegt am Grund – warum?\nDie Bauren hatten, hör ich reden,\nSein schönes Holz zum Baun vonnöten\nUnd rissen ihn deswegen um.\nJohann Christoph Friedrich Schiller"),
@@ -10,3 +12,22 @@ poems  = [
     ("\nEinsam wandle deine Bahnen,\nstilles Herz, und unverzagt;\nviel erkennen, vieles ahnen\nwirst du, was dir keiner sagt.\nJoseph Viktor von Scheffel"),
     ("\nHerze, willst du ganz genesen,\nsei selber wahr, sei selber rein!\nWas wir in Welt und Menschen lesen,\nist nur der eigne Widerschein.\nTheodor Fontane")
 ]
+
+tell_poem = [
+   "erzähl mir ein gedicht",
+   "erzähl ein gedicht",
+   "erzähle mir ein gedicht",
+   "erzähle ein gedicht",
+   "ich will ein gedicht",
+   "ich will ein gedicht hören",
+   "ich möchte ein gedicht" 
+]
+
+
+def tell_me_poem(sentence):
+    for poem_indicator in tell_poem:
+        if poem_indicator in sentence:
+            print("\nOkay\n" + random.choice(poems))
+            return True
+        
+    return False

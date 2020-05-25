@@ -1,7 +1,7 @@
 # coding=utf-8
 
 from verbs import verbs
-from special_words import family, tell_poem, tell_joke, calculate_words
+from special_words import family, calculate_words
 from word_lists import no_variations, yes_variations
 from forbidden_words import insulting_words
 import random
@@ -81,15 +81,6 @@ def is_insulting(sentence):
             print("\nHey! Das ist überhaupt nicht nett!")
             print("\nWas willst du mir noch sagen?")
             return True
-    return False
-
-
-def tell_me_poem(sentence):
-    for poem_indicator in tell_poem:
-        if poem_indicator in sentence:
-            print("\nOkay\n" + random.choice(poems))
-            return True
-        
     return False
 
 
