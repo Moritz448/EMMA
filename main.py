@@ -22,7 +22,7 @@ def emma():
 
             answered = False
 
-            if inp == "tschüss" or inp == "tschüß":
+            if inp == "tschüss" or inp == "tschüß" or inp == "tschau" or inp == "tschö" or inp == "tschüs" or inp == "bye" or inp == "ciao":
                 print("Schade, dass du schon gehen willst. Bis bald!")
                 answered = True
                 talk_ended = True
