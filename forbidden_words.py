@@ -9,5 +9,7 @@ insulting_words = [
     "du schwein",
     "du stinkst",
     "blöde kuh",
-    "idiot"
+    "idiot",
+    "petze",
+    "blödi"
     ]
