@@ -7,5 +7,7 @@ insulting_words = [
     "arsch",
     "knallerbse",
     "du schwein",
-    "du stinkst"
+    "du stinkst",
+    "blöde kuh",
+    "idiot"
     ]
