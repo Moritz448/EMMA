@@ -1,3 +1,5 @@
+# coding=utf-8
+
 comments = ["Das klingt interessant.",
             "Aha.",
             "Interessant.",

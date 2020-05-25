@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from verbs import verbs
 from special_words import family, tell_poem, tell_joke
 from word_lists import no_variations, yes_variations

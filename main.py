@@ -1,3 +1,5 @@
+# coding=utf-8
+
 from functions import reformulate_sentence, i_am_sad, tell_me_poem, is_insulting, reformulate_sentence, ask_after_family, read_sentence, tell_me_joke
 from word_lists import comments, questions, goodbye
 

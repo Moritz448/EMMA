@@ -1,3 +1,5 @@
+# coding=utf-8
+
 # Contains jokes for telling them
 jokes = [
     "Was sagt ein Haifisch, wenn er einen Surfer sieht?\n'Das ist aber nett serviert, so mit Frühstücksbrettchen.'",

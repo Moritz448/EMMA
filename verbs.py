@@ -1,3 +1,5 @@
+# coding=utf-8
+
 verbs = [ 
         ("mag", "magst"),
         ("liebe", "liebst"),

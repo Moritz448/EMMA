@@ -1,3 +1,5 @@
+# coding=utf-8
+
 insulting_words = [
     "arschloch",
     "blödmann",
