@@ -36,3 +36,13 @@ yes_variations = ["ja",
                   "yeah",
                   "joa"
 ]
+
+goodbye = [
+    "tschüss",
+    "tschüß",
+    "tschau",
+    "tschö",
+    "tschüs",
+    "bye",
+    "ciao"
+]

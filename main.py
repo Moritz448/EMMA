@@ -1,5 +1,5 @@
 from functions import reformulate_sentence, i_am_sad, tell_me_poem, is_insulting, reformulate_sentence, ask_after_family, read_sentence, tell_me_joke
-from word_lists import comments, questions
+from word_lists import comments, questions, goodbye
 
 import random
 
@@ -22,10 +22,11 @@ def emma():
 
             answered = False
 
-            if inp == "tschüss" or inp == "tschüß" or inp == "tschau" or inp == "tschö" or inp == "tschüs" or inp == "bye" or inp == "ciao":
-                print("Schade, dass du schon gehen willst. Bis bald!")
-                answered = True
-                talk_ended = True
+            for bye_word in goodbye:
+                if inp == bye_word: 
+                    print("Schade, dass du schon gehen willst. Bis bald!")
+                    answered = True
+                    talk_ended = True
 
             if not answered:
                 answered = i_am_sad(inp)
