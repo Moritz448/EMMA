@@ -80,9 +80,18 @@ tell_joke = [
    "erzähl einen witz",
    "erzähl ein witz",
    "erzähl witz",
+   "erzähl mir nen witz",
    "erzähle mir ein witz",
    "erzähle mir einen witz",
    "erzähle einen witz",
    "erzähle ein witz",
    "erzähle witz"
+]
+
+calculate_words  =[
+   "mir ist langweilig",
+   "langweilig",
+   "ich möchte rechnen",
+   "ich möchte rechnen üben",
+   "ich will rechnen"
 ]

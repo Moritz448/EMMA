@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from functions import reformulate_sentence, i_am_sad, tell_me_poem, is_insulting, reformulate_sentence, ask_after_family, read_sentence, tell_me_joke
+from functions import *
 from word_lists import comments, questions, goodbye
 
 import random
@@ -35,6 +35,9 @@ def emma():
 
             if not answered:
                 answered = tell_me_joke(inp)
+
+            if not answered:
+                answered = calculate(inp) 
 
             if not answered:
                 answered = tell_me_poem(inp)

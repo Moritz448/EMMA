@@ -1,12 +1,13 @@
 # coding=utf-8
 
 from verbs import verbs
-from special_words import family, tell_poem, tell_joke
+from special_words import family, tell_poem, tell_joke, calculate_words
 from word_lists import no_variations, yes_variations
 from forbidden_words import insulting_words
 import random
 from poems import poems
 from jokes import jokes
+import word_lists
 
 
 def read_sentence():
@@ -99,3 +100,30 @@ def tell_me_joke(sentence):
             return True
         
     return False
+
+
+def calculate(sentence):
+    for calc_indicator in calculate_words:
+        if calc_indicator in sentence:
+            make_calc_task()
+            return True
+    
+    return False
+
+def make_calc_task():
+
+    print("Okay. Hier kommt die Aufgabe:\n")
+    def check_answer():
+
+        
+        answer = input("\nWas ergibt 5 + 5?\n")
+        
+        if int(answer) == 10:
+            print("Das ist Richtig!!")
+            return True
+
+        else:
+            print("\nDas ist leider falsch!")
+            check_answer()
+    
+    check_answer()
