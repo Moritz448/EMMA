@@ -1,9 +1,10 @@
 from verbs import verbs
-from special_words import family, tell_poem
+from special_words import family, tell_poem, tell_joke
 from word_lists import no_variations, yes_variations
 from forbidden_words import insulting_words
 import random
 from poems import poems
+from jokes import jokes
 
 
 def read_sentence():
@@ -89,3 +90,12 @@ def tell_me_poem(sentence):
             return True
         
         return False
+
+
+##def tell_me_joke(sentence):
+##    for joke_indicator in tell_joke:
+##        if joke_indicator in sentence:
+##            print("\nOkay" + "\n" + random.choice(jokes))
+##            return True
+##        
+##        return False

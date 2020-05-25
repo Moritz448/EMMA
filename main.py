@@ -34,6 +34,9 @@ def emma():
                 answered = tell_me_poem(inp)
 
             if not answered:
+                answered = tell_me_joke(inp)
+
+            if not answered:
                 answered = is_insulting(inp)
 
             if not answered:
