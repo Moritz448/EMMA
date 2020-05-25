@@ -11,5 +11,7 @@ insulting_words = [
     "blöde kuh",
     "idiot",
     "petze",
-    "blödi"
+    "blödi",
+    "dumme kuh",
+    "dumme"
     ]
