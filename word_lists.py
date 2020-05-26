@@ -14,30 +14,7 @@ questions = ["Erzähl mir mehr davon!",
             "Möchtest du mir noch etwas erzählen?"]
 
 
-# Contains several variations of "no" in German
-no_variations = ["nein",
-                 "nö",
-                 "ne",
-                 "nee",
-                 "neee",
-                 "neeee",
-                 "neeeee",
-                 "nope",
-                 "niemals",
-                 "no"]
 
-# Contains several variations of "yes" in German
-yes_variations = ["ja",
-                  "jo",
-                  "jaa",
-                  "jaaa",
-                  "jaaaa",
-                  "jaaaaa",
-                  "yes",
-                  "gerne",
-                  "yeah",
-                  "joa"
-]
 
 goodbye = [
     "tschüss",

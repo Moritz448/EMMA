@@ -15,3 +15,14 @@ verbs = [
         ("will", "willst"),
         ("möchte", "möchtest")
         ]
+
+def reformulate_sentence(sentence):
+    
+    for i_form, you_form in verbs:
+        beginning = "ich " + i_form + " "
+        if sentence.startswith(beginning):
+            frage = "Warum " + you_form + " Du " + \
+                sentence[len(beginning):] + "?"
+            print("\n", frage)
+            return True
+    return False
