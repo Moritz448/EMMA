@@ -62,6 +62,7 @@ def emma():
                 print(random.choice(word_lists.comments), 
                       random.choice(word_lists.questions))
 
+
             print()
     except KeyboardInterrupt:
         print("Schade, dass du schon gehen willst. Bis bald!")
