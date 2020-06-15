@@ -27,36 +27,41 @@ def emma():
         talk_ended = False
 
         while not talk_ended:
-            inp = read_sentence.read_sentence()
+            finished_inp = read_sentence.read_sentence()
 
             answered = False
 
             for bye_word in word_lists.goodbye:
-                if inp == bye_word: 
+                if finished_inp == bye_word: 
                     print("Schade, dass du schon gehen willst. Bis bald!")
                     answered = True
                     talk_ended = True
 
             if not answered:
-                answered = sad.i_am_sad(inp)
+                if finished_inp == "":
+                    finished_inp = read_sentence.read_sentence()
+                    answered = True
 
             if not answered:
-                answered = jokes.tell_me_joke(inp)
+                answered = sad.i_am_sad(finished_inp)
 
             if not answered:
-                answered = calculate.calculate(inp) 
+                answered = jokes.tell_me_joke(finished_inp)
 
             if not answered:
-                answered = poems.tell_me_poem(inp)
+                answered = calculate.calculate(finished_inp) 
 
             if not answered:
-                answered = forbidden_words.is_insulting(inp)
+                answered = poems.tell_me_poem(finished_inp)
 
             if not answered:
-                answered = verbs.reformulate_sentence(inp)
+                answered = forbidden_words.is_insulting(finished_inp)
 
             if not answered:
-                answered = family.ask_after_family(inp)
+                answered = verbs.reformulate_sentence(finished_inp)
+
+            if not answered:
+                answered = family.ask_after_family(finished_inp)
 
             if not answered:
                 print(random.choice(word_lists.comments), 
