@@ -11,6 +11,7 @@ import poems
 import read_sentence
 import sad
 import word_lists
+import voice_output
 
 
 def emma():
@@ -55,7 +56,7 @@ def emma():
 
             for bye_word in word_lists.goodbye:
                 if finished_inp == bye_word: 
-                    print("Schade, dass du schon gehen willst. Bis bald!")
+                    voice_output.voice_output("Schade, dass du schon gehen willst. Bis bald!")
                     answered = True
                     talk_ended = True
 
@@ -86,11 +87,12 @@ def emma():
                 answered = family.ask_after_family(finished_inp)
 
             if not answered:
-                print(random.choice(word_lists.comments), 
-                      random.choice(word_lists.questions))
+                super_question = random.choice(word_lists.comments) + " " +  random.choice(word_lists.questions)
+                voice_output.voice_output(super_question)
 
 
             print()
+
     except KeyboardInterrupt:
         print("Schade, dass du schon gehen willst. Bis bald!")
 

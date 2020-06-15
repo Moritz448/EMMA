@@ -2,6 +2,7 @@
 
 import speech_recognition as sr
 import sys
+import voice_output
 
 def read_sentence():
 
@@ -16,7 +17,7 @@ def read_sentence():
         inp = r.recognize_google(audio, language="de_DE")
 
     except sr.UnknownValueError:
-        print("Fehler bei der Spracherkennung!! Bitte versuche es erneut!!\n")
+        voice_output.voice_output("Fehler bei der Spracherkennung!! Bitte versuche es erneut!!\n")
         inp = ""
 
     # Delete Whitespaces at the beginning and the end

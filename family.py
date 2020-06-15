@@ -1,5 +1,6 @@
 # coding=utf-8
 
+import voice_output
 
 family = [ 
 
@@ -66,6 +67,6 @@ def ask_after_family(sentence):
     words = sentence.split()
     for family_member in family:
         if family_member in words:
-            print("\nErzähl mir mehr über deine Familie.")
+            voice_output.voice_output("\nErzähl mir mehr über deine Familie.")
             return True
     return False

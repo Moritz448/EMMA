@@ -1,5 +1,7 @@
 # coding=utf-8
 
+import voice_output
+
 verbs = [ 
         ("mag", "magst"),
         ("liebe", "liebst"),
@@ -23,6 +25,6 @@ def reformulate_sentence(sentence):
         if sentence.startswith(beginning):
             frage = "Warum " + you_form + " Du " + \
                 sentence[len(beginning):] + "?"
-            print("\n", frage)
+            voice_output.voice_output(("\n", frage))
             return True
     return False

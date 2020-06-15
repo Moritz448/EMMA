@@ -1,6 +1,7 @@
 # coding=utf-8
 
 import random
+import voice_output
 
 # Contains jokes for telling them
 jokes = [
@@ -34,7 +35,7 @@ tell_joke = [
 def tell_me_joke(sentence):
     for joke_indicator in tell_joke:
         if joke_indicator in sentence:
-            print("\nOkay\n" + random.choice(jokes))
+            voice_output.voice_output("\nOkay\n" + random.choice(jokes))
             return True
         
     return False

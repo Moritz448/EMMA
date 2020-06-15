@@ -1,7 +1,7 @@
 # coding=utf-8
 
 import random
-
+import voice_output
 # Contains Poems for telling them
 poems  = [
     ("\nSpinoza\nHier liegt ein Eichbaum umgerissen,\nSein Wipfel tät die Wolken küssen,\nEr liegt am Grund – warum?\nDie Bauren hatten, hör ich reden,\nSein schönes Holz zum Baun vonnöten\nUnd rissen ihn deswegen um.\nJohann Christoph Friedrich Schiller"),
@@ -27,7 +27,7 @@ tell_poem = [
 def tell_me_poem(sentence):
     for poem_indicator in tell_poem:
         if poem_indicator in sentence:
-            print("\nOkay\n" + random.choice(poems))
+            voice_output.voice_output("\nOkay\n" + random.choice(poems))
             return True
         
     return False
