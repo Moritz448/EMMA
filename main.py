@@ -44,7 +44,7 @@ def emma():
                 answered = jokes.tell_me_joke(inp)
 
             if not answered:
-                answered = calculate.calculate(inp) 
+                answered = calculate.if_calculate_word(inp) 
 
             if not answered:
                 answered = poems.tell_me_poem(inp)
